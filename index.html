@@ -10,7 +10,9 @@
 
 
     <nav>
-        <div class="logo">DatzSoFurry</div>
+        <a href="#home" class="logo-link">
+            <img src="[PASTE_LOGO_DIRECT_LINK_HERE]" alt="DatzSoFurry Logo" class="logo-img">
+        </a>
         <ul class="nav-links">
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#fursuit-prices">Fursuits</a></li>
@@ -20,7 +22,7 @@
         </ul>
     </nav>
 
-    <header id="home" class="hero">
+    <header id="home" class="hero" style="background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('[PASTE_HERO_DIRECT_LINK_HERE]') center/cover;">
         <h1>Welcome to DatzSoFurry</h1>
         <p>High-quality, custom Fursuits and Digital Art brought to life.</p>
         <a href="#quote" class="btn">Request a Quote</a>
@@ -29,10 +31,12 @@
     <section id="gallery" class="section">
         <h2>Our Previous Work</h2>
         <div class="grid-container">
-            <div class="gallery-item">[Fursuit Image 1]</div>
-            <div class="gallery-item">[Fursuit Image 2]</div>
-            <div class="gallery-item">[Art Image 1]</div>
-            <div class="gallery-item">[Art Image 2]</div>
+            <img src="[PASTE_GALLERY_LINK_1_HERE]" class="gallery-item" alt="DatzSoFurry Work 1">
+            <img src="[PASTE_GALLERY_LINK_2_HERE]" class="gallery-item" alt="DatzSoFurry Work 2">
+            <img src="[PASTE_GALLERY_LINK_3_HERE]" class="gallery-item" alt="DatzSoFurry Work 3">
+            <img src="[PASTE_GALLERY_LINK_4_HERE]" class="gallery-item" alt="DatzSoFurry Work 4">
+            <img src="[PASTE_GALLERY_LINK_5_HERE]" class="gallery-item" alt="DatzSoFurry Work 5">
+            <img src="[PASTE_GALLERY_LINK_6_HERE]" class="gallery-item" alt="DatzSoFurry Work 6">
         </div>
     </section>
 
@@ -156,62 +160,5 @@
     </footer>
 
 </body>
-</html>
-/* Brand Colors: Pink, Violet, Black */
-:root {
-    --pink: #ff3399; 
-    --violet: #8a2be2; 
-    --black: #0a0a0a;
-    --dark-grey: #1a1a1a;
-    --text-light: #f4f4f4;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-html { scroll-behavior: smooth; }
-body { background-color: var(--black); color: var(--text-light); line-height: 1.6; }
-
-/* Navigation */
-nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: rgba(10, 10, 10, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--violet);}
-.logo { font-size: 1.8rem; font-weight: bold; background: linear-gradient(45deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.nav-links { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap;}
-.nav-links a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
-.nav-links a:hover { color: var(--pink); }
-
-/* Sections & Hero */
-.hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('placeholder-hero.jpg') center/cover; padding: 0 20px;}
-.hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--pink); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
-.hero p { font-size: 1.2rem; margin-bottom: 20px;}
-.section { padding: 5rem 5%; text-align: center; }
-.bg-alt { background: var(--dark-grey); }
-h2 { margin-bottom: 2.5rem; font-size: 2.5rem; background: linear-gradient(45deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-
-/* Buttons */
-.btn { display: inline-block; padding: 12px 25px; background: linear-gradient(45deg, var(--pink), var(--violet)); color: #fff; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 15px; border: none; cursor: pointer; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s;}
-.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255, 51, 153, 0.4); }
-
-/* Grids & Cards */
-.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-.gallery-item { background: var(--dark-grey); height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid #333; color: #777;}
-.price-cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-.card { background: var(--dark-grey); padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--violet); width: 300px; text-align: left; transition: transform 0.3s;}
-.card:hover { transform: translateY(-5px); border-top: 4px solid var(--pink);}
-.card h3 { color: var(--text-light); margin-bottom: 5px; font-size: 1.5rem;}
-.card .price { color: var(--pink); font-size: 1.2rem; font-weight: bold; margin-bottom: 15px; }
-.card ul { margin-left: 20px; margin-top: 10px; color: #ccc;}
-
-/* TOS Section */
-.tos-content { max-width: 800px; margin: 0 auto; text-align: left; background: var(--black); padding: 2rem; border-radius: 10px; border-left: 5px solid var(--pink);}
-.tos-content p { margin-bottom: 1rem; }
-.tos-content strong { color: var(--violet); }
-
-/* Forms */
-.quote-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; text-align: left; background: var(--dark-grey); padding: 2rem; border-radius: 12px;}
-.quote-form label { font-weight: bold; margin-top: 15px; color: var(--pink);}
-.quote-form input, .quote-form select, .quote-form textarea { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #444; border-radius: 5px; background: var(--black); color: var(--text-light); }
-.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { outline: none; border-color: var(--violet); }
-
-/* Footer */
-footer { background: #000; color: #888; text-align: center; padding: 3rem 1rem; border-top: 1px solid #222;}
-.social-links { margin-bottom: 15px; }
-.social-links a { color: var(--violet); text-decoration: none; margin: 0 10px; font-weight: bold; transition: color 0.3s;}
-.social-links a:hover { color: var(--pink); }
+    </html>
+    
