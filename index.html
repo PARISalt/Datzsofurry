@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DatzSoFurry | Fursuits & Art Commissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav>
+        <div class="logo">DatzSoFurry</div>
+        <ul class="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#fursuit-prices">Fursuits</a></li>
+            <li><a href="#art-prices">Art</a></li>
+            <li><a href="#tos">T.O.S</a></li>
+            <li><a href="#quote">Get a Quote</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Welcome to DatzSoFurry</h1>
+        <p>High-quality, custom Fursuits and Digital Art brought to life.</p>
+        <a href="#quote" class="btn">Request a Quote</a>
+    </header>
+
+    <section id="gallery" class="section">
+        <h2>Our Previous Work</h2>
+        <div class="grid-container">
+            <div class="gallery-item">[Fursuit Image 1]</div>
+            <div class="gallery-item">[Fursuit Image 2]</div>
+            <div class="gallery-item">[Art Image 1]</div>
+            <div class="gallery-item">[Art Image 2]</div>
+        </div>
+    </section>
+
+    <section id="fursuit-prices" class="section bg-alt">
+        <h2>Fursuit Commissions & Prices</h2>
+        <div class="price-cards">
+            <div class="card">
+                <h3>Head Only</h3>
+                <p class="price">$500 - $2,000</p>
+                <ul>
+                    <li>Fully lined interior</li>
+                    <li>2D or 3D eyes</li>
+                    <li>Custom expressions</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Mini Partial</h3>
+                <p class="price">$800 - $2,500</p>
+                <ul>
+                    <li>Head, Paws, and Tail</li>
+                    <li>Perfect for beginners</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Full Partial</h3>
+                <p class="price">Starting at $3,000</p>
+                <ul>
+                    <li>Head, Paws, Tail</li>
+                    <li>Includes Arm & Leg Sleeves</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Plantigrade Fullsuit</h3>
+                <p class="price">Starting at $4,000</p>
+                <ul>
+                    <li>Straight-leg body suit</li>
+                    <li>Fitted body tape dummy required</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Digitigrade Fullsuit</h3>
+                <p class="price">Starting at $5,000</p>
+                <ul>
+                    <li>Padded animal-like legs</li>
+                    <li>Fitted body tape dummy required</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="art-prices" class="section">
+        <h2>Art Commissions & Prices</h2>
+        <div class="price-cards">
+            <div class="card">
+                <h3>Icons</h3>
+                <p class="price">$50</p>
+                <p>Perfect for social media avatars.</p>
+            </div>
+            <div class="card">
+                <h3>Badges</h3>
+                <p class="price">$100</p>
+                <p>Physical or digital badges for conventions.</p>
+            </div>
+            <div class="card">
+                <h3>Reference Sheets</h3>
+                <p class="price">$100</p>
+                <p>Front, back, and detail views for your character.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tos" class="section bg-alt">
+        <h2>Terms of Service</h2>
+        <div class="tos-content">
+            <p><strong>Age Requirement:</strong> You must be 18 years or older to commission a fursuit, or have explicit permission and guidance from a parent or legal guardian.</p>
+            <p><strong>Payments & Deposits:</strong> A 30% non-refundable deposit is required to secure your spot in the queue and purchase materials. Payment plans are available and can be discussed during the quoting process.</p>
+            <p><strong>Cancellations:</strong> Commissions can be canceled before material orders are placed for a partial refund (minus the deposit). Once fur has been cut, no refunds will be issued.</p>
+            <p><strong>Deadlines:</strong> Completion times vary based on the complexity of the suit and current queue. Estimated completion dates will be provided but are subject to change.</p>
+        </div>
+    </section>
+
+    <section id="quote" class="section">
+        <h2>Request a Fursuit Quote</h2>
+        <p>Fill out the details below to get an estimate for your character.</p>
+        <form action="https://formspree.io/f/mpqkvrlq" method="POST" class="quote-form">
+            <label>Name / Username:</label>
+            <input type="text" name="name" required>
+
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+
+            <label>Character Reference Sheet (Link):</label>
+            <input type="url" name="ref_sheet" placeholder="Link to Google Drive, Toyhouse, etc." required>
+
+            <label>Commission Type:</label>
+            <select name="type">
+                <option value="Head">Head Only</option>
+                <option value="Mini Partial">Mini Partial</option>
+                <option value="Full Partial">Full Partial</option>
+                <option value="Plantigrade Full">Plantigrade Fullsuit</option>
+                <option value="Digitigrade Full">Digitigrade Fullsuit</option>
+                <option value="Art Commission">Digital Art (Icon/Badge/Ref Sheet)</option>
+            </select>
+
+            <label>Additional Details or Special Features (LEDs, Horns, Wings):</label>
+            <textarea name="details" rows="5"></textarea>
+
+            <button type="submit" class="btn">Submit Quote</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@datzsofurry?_r=1&_t=ZS-95vUAZo4Cyz" target="_blank">TikTok</a> |
+            <a href="https://www.instagram.com/datzsofurry?igsh=MW1hcnkydzd5ZGMzaw==" target="_blank">Instagram</a> |
+            <a href="https://youtube.com/@datzsofurry?si=gzsnJXeR-leu6RFs" target="_blank">YouTube</a> |
+            <a href="https://www.facebook.com/profile.php?id=61562811964603" target="_blank">Facebook Page</a> |
+            <a href="https://facebook.com/groups/1685847746173398/" target="_blank">Facebook Group</a>
+        </div>
+        <p>&copy; 2026 DatzSoFurry. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+/* Brand Colors: Pink, Violet, Black */
+:root {
+    --pink: #ff3399; 
+    --violet: #8a2be2; 
+    --black: #0a0a0a;
+    --dark-grey: #1a1a1a;
+    --text-light: #f4f4f4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+html { scroll-behavior: smooth; }
+body { background-color: var(--black); color: var(--text-light); line-height: 1.6; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: rgba(10, 10, 10, 0.95); position: sticky; top: 0; z-index: 100; border-bottom: 2px solid var(--violet);}
+.logo { font-size: 1.8rem; font-weight: bold; background: linear-gradient(45deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.nav-links { list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap;}
+.nav-links a { color: var(--text-light); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+.nav-links a:hover { color: var(--pink); }
+
+/* Sections & Hero */
+.hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('placeholder-hero.jpg') center/cover; padding: 0 20px;}
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--pink); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);}
+.hero p { font-size: 1.2rem; margin-bottom: 20px;}
+.section { padding: 5rem 5%; text-align: center; }
+.bg-alt { background: var(--dark-grey); }
+h2 { margin-bottom: 2.5rem; font-size: 2.5rem; background: linear-gradient(45deg, var(--pink), var(--violet)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 12px 25px; background: linear-gradient(45deg, var(--pink), var(--violet)); color: #fff; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 15px; border: none; cursor: pointer; font-size: 1.1rem; transition: transform 0.2s, box-shadow 0.2s;}
+.btn:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(255, 51, 153, 0.4); }
+
+/* Grids & Cards */
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.gallery-item { background: var(--dark-grey); height: 250px; display: flex; align-items: center; justify-content: center; border-radius: 8px; border: 1px solid #333; color: #777;}
+.price-cards { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.card { background: var(--dark-grey); padding: 2.5rem; border-radius: 12px; border-top: 4px solid var(--violet); width: 300px; text-align: left; transition: transform 0.3s;}
+.card:hover { transform: translateY(-5px); border-top: 4px solid var(--pink);}
+.card h3 { color: var(--text-light); margin-bottom: 5px; font-size: 1.5rem;}
+.card .price { color: var(--pink); font-size: 1.2rem; font-weight: bold; margin-bottom: 15px; }
+.card ul { margin-left: 20px; margin-top: 10px; color: #ccc;}
+
+/* TOS Section */
+.tos-content { max-width: 800px; margin: 0 auto; text-align: left; background: var(--black); padding: 2rem; border-radius: 10px; border-left: 5px solid var(--pink);}
+.tos-content p { margin-bottom: 1rem; }
+.tos-content strong { color: var(--violet); }
+
+/* Forms */
+.quote-form { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; text-align: left; background: var(--dark-grey); padding: 2rem; border-radius: 12px;}
+.quote-form label { font-weight: bold; margin-top: 15px; color: var(--pink);}
+.quote-form input, .quote-form select, .quote-form textarea { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #444; border-radius: 5px; background: var(--black); color: var(--text-light); }
+.quote-form input:focus, .quote-form select:focus, .quote-form textarea:focus { outline: none; border-color: var(--violet); }
+
+/* Footer */
+footer { background: #000; color: #888; text-align: center; padding: 3rem 1rem; border-top: 1px solid #222;}
+.social-links { margin-bottom: 15px; }
+.social-links a { color: var(--violet); text-decoration: none; margin: 0 10px; font-weight: bold; transition: color 0.3s;}
+.social-links a:hover { color: var(--pink); }
